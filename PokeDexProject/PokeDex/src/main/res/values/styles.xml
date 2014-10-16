@@ -1,0 +1,55 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/RedActionBar</item>
+    </style>
+
+    <!-- Sets up color for action bar -->
+    <style name="RedActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/navigation_background</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitleText</item>
+    </style>
+
+    <style name="ActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/navigation_text</item>
+    </style>
+
+    <!--Home Screen Styles -->
+    <style name="HomeImageView">
+        <item name="android:layout_height">@dimen/home_image_height</item>
+        <item name="android:layout_width">@dimen/home_image_width</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="HomeLabel">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignBottom">@id/image</item>
+        <item name="android:layout_alignTop">@id/image</item>
+        <item name="android:layout_toRightOf">@id/image</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/home_text_size</item>
+    </style>
+
+    <!-- Utility Styles -->
+    <style name="HorizantalRule">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/border_color</item>
+    </style>
+
+
+</resources>

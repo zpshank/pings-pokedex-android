@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="navigation_background">#CC0000</color>
+    <color name="navigation_text">#FFFFFF</color>
+
+    <color name="border_color">#cccccc</color>
+
+    <color name="light_blue">#33b5e5</color>
+    <color name="light_orange">#ffbb33</color>
+    <color name="light_green">#99cc00</color>
+    <color name="light_red">#ff4444</color>
+</resources>
